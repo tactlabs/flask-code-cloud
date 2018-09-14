@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <title>File Uploader</title>
+  </head>
+  <body>
+    
+        <h4>File Uploader</h4>
+        
+        {{ result.result }}
+        
+        {% if result.result == 1 %}
+    		<div>
+    			<img src="{{ result.img_path }}" alt="Code Cloud">
+    		</div>
+  		{% else %}
+    		<div>Error : {{ result.error }}</div>
+  		{% endif %}
+		 
+  </body>
+  </html>
